@@ -1,13 +1,13 @@
 #include "random.h"
 
 int main() {
-  int myarray[10];
   int i ;
+  // generate array of 10 random ints  4 bytes each
+  int* randomData = generate_random(10);
   for (i = 0; i < 10; i ++){
-    myarray[i] = generate_random(50);
-    printf("%d\n", myarray[i]);
+    printf("%d\n", randomData[i]);
 
   }
-  printf("%d\n", generate_random(50));
+  // printf("%d\n", generate_random(50));
   return 0;
 }

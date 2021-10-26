@@ -8,5 +8,5 @@
 #include <string.h>
 #include <unistd.h>
 
-char* generate_random(int correct_num_of_bytes);
+int* generate_random(int correct_num_of_bytes);
 #endif
